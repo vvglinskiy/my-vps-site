@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星辰科技 - 探索未来</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-main: #202124;
+            --text-muted: #5f6368;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* 顶部导航栏 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-muted);
+            margin-left: 25px;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* 主视觉区域 (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #e8f0fe 0%, #ffffff 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #174ea6;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1557b0;
+        }
+
+        /* 内容卡片区 */
+        .content-section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #eaeaea;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+            font-size: 20px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid #eaeaea;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">星辰科技</a>
+            <nav>
+                <a href="#">首页</a>
+                <a href="#">产品服务</a>
+                <a href="#">解决方案</a>
+                <a href="#">关于我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>赋能企业数字化转型</h1>
+        <p>我们致力于提供安全、高效的云计算与大数据解决方案，助力您的业务腾飞。</p>
+        <a href="#" class="btn">了解更多</a>
+    </div>
+
+    <div class="content-section">
+        <div class="card">
+            <h3>云端计算</h3>
+            <p>提供弹性、稳定的云服务器与容器服务，支持业务快速部署与扩展，保障数据安全。</p>
+        </div>
+        <div class="card">
+            <h3>数据分析</h3>
+            <p>深度挖掘数据价值，提供实时数据可视化与商业智能分析，辅助企业精准决策。</p>
+        </div>
+        <div class="card">
+            <h3>网络安全</h3>
+            <p>构建全方位的安全防护体系，抵御网络威胁，确保企业核心资产免受侵害。</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 星辰科技有限公司 版权所有 | 京ICP备12345678号
+    </footer>
+
+</body>
+</html>
